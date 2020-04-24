@@ -28,9 +28,6 @@ body, div, p, td, li {
   border-top: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-#sidebar ul li {
-  display: block;
-}
 
 #sidebar ul li a {
   color: aliceblue;
@@ -56,16 +53,20 @@ body, div, p, td, li {
   bottom: 0px;
   width: 100%;
   color: aliceblue;
+  border-left: 8px solid #636363;
+  text-decoration: none;
   padding: 14px 0 14px 8px;
 }
 
 .brand-link {
+  border-left: none !important; /* CHANGE THE BRAND TO A SEPERATE ITEM */
   font-size: 1.5rem;
   text-align: justify;
   font-weight: 550;
 }
 
 .brand-link:hover {
+  border-left: none !important; /* CHANGE THE BRAND TO A SEPERATE ITEM */
   text-decoration: none;
   background-color: #636363 !important;
 }
