@@ -222,7 +222,6 @@ class Task(models.Model):
     def get_creation_reject_votes(self):
         return Vote.objects.filter(task=self, vote_type=2)
 
-
     def __str__(self):
         return self.team.__str__() + ": " + self.title + " " + self.description[0:15]
 

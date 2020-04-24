@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% load static %}
+    <!-- {% load static %} -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/tasks/css/style.css">
+    <link rel="stylesheet" href="../../static/tasks/css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
     <title>TPS - {{ page_title }} </title>
     <script>
@@ -19,7 +21,32 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
+    <div id="sidebar">
+      <ul>
+        <li id="brand-item"><a href="#" class="brand-link"><img src="../../static/tasks/img/tps_logo.png" alt="TPS" id="tps-logo"></a></li>
+        <hr>
+        <li><a href="#"><i class="fas fa-user fa-2x"></i><span id="sidebar-user">Doruk Maltepe</span></a></li>
+        <li><a href="#"><i class="fas fa-bell fa-2x"></i><span id="sidebar-notifications">Notifications</span></a></li>
+        <li><a href="#"><i class="fas fa-user-friends fa-2x"></i><span id="sidebar-teams">Teams</span></a></li>
+        <li><a href="#"><i class="fas fa-calendar-alt fa-2x"></i><span id="sidebar-calendar">Calendar</span></a></li>
+        <li><a href="#"><i class="fas fa-comment fa-2x"></i><span id="sidebar-comments">Comments</span></a></li>
+        <li><a href="#"><i class="fas fa-book fa-2x"></i><span id="sidebar-grades">Grades</span></a></li>
+      </ul>
+        <a href="#" id="bottom-sign-out"><i class="fas fa-sign-out-alt fa-2x"></i>Sign Out</a>
+    </div>
+
+    <div class="main">
+      <h2>Sidebar</h2>
+      <p>This sidebar is of full height (100%) and always shown.</p>
+      <p>Scroll down the page to see the result.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+
+
+    <!-- <nav class="navbar navbar-default fixed-left">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="{% url 'tasks:choose' %}">Task Point System</a>
@@ -30,14 +57,14 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>  -->
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
-  				<div class="col-xs-12 col-sm-6">
+  				<div class="col-sm-6">
             {% block leftcontent %}{% endblock %}
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-sm-6">
             {% block rightcontent %}{% endblock %}
           </div>
       </div>
@@ -45,11 +72,11 @@
       <div class="row" style="text-align: center; font-size: 8pt; margin-top: 20px; ">
         Task Point System, Kaya Oğuz, &copy; 2017-2019
       </div>
-    </div>
+    </div>  -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  {% block scriptcontent %}{% endblock %}
+  <!-- {% block scriptcontent %}{% endblock %} -->
   </body>
 </html>

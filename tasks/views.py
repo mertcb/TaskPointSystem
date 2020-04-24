@@ -341,7 +341,5 @@ def send_vote(request, task_id, status_id, button_id):
     elif status_id == 3 and button_id == 4:
         vote.vote_type = 4
 
-
-
     vote.save()
     return HttpResponseRedirect('/tasks/' + task_id + '/view/')
