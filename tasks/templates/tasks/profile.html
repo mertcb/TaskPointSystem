@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- {% load static %} -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/tasks/css/style.css">
+    <link rel="stylesheet" href="../../static/tasks/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
+    <title>TPS - {{ page_title }} </title>
+    <script>
+      function ensure(d) {
+        return confirm("Are you sure you want to " + d + "?")
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- DELETE FROM HERE -->
+    <div id="sidebar">
+      <ul>
+        <li id="brand-item"><a href="#" class="brand-link"><img src="../../static/tasks/img/tps_logo.png" alt="TPS" id="tps-logo"></a></li>
+        <hr>
+        <li><a href="#"><i class="fas fa-user fa-2x"></i><span id="sidebar-user">Doruk Maltepe</span></a></li>
+        <li><a href="#"><i class="fas fa-bell fa-2x"></i><span id="sidebar-notifications">Notifications</span></a></li>
+        <li><a href="#"><i class="fas fa-user-friends fa-2x"></i><span id="sidebar-teams">Teams</span></a></li>
+        <li><a href="#"><i class="fas fa-calendar-alt fa-2x"></i><span id="sidebar-calendar">Calendar</span></a></li>
+        <li><a href="#"><i class="fas fa-comment fa-2x"></i><span id="sidebar-comments">Comments</span></a></li>
+        <li><a href="#"><i class="fas fa-book fa-2x"></i><span id="sidebar-grades">Grades</span></a></li>
+      </ul>
+        <a href="#" id="bottom-sign-out"><i class="fas fa-sign-out-alt fa-2x"></i>Sign Out</a>
+    </div>
+
+    <!-- DELETE UNTIL HERE -->
+
+    <div class="container main-screen">
+        <div class="row">
+            <div class="col-sm-12 profile-row">
+                <div class="profile-card">
+                    <img src="C:\Users\oguzs\Downloads\Collaborate Pic.jpeg" alt="Profile Picture">
+                    <div class="profile-info">
+                        <h1>Utku Isil</h1>
+                        <p class="title">Computer Engineering</p>
+                        <p>20170602023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 user-feed">
+                <ul>
+                    <li>
+                      <p class="notification-date">05-05-20</p>
+                      <div class="notification-header">
+                        <h4>SE 302</h4>
+                        <p><span class="bold-span">Milestone:</span> Design Document</p>
+                        <p><span class="bold-span">Task:</span> UML Diagrams</p>
+                      </div>
+                      <hr class="content-separator">
+                      <div class="notification-content">
+                        <p class="content-text">Id sit aliqua consequat sunt qui cillum sit ea non magna ullamco. Tempor quis nulla non ut reprehenderit eiusmod proident. Incididunt aliqua reprehenderit laboris consectetur proident sint eu. Eiusmod magna consequat consectetur aliqua aute aliquip sint sit. Nisi tempor consectetur ipsum cillum tempor commodo dolore. Non ut voluptate nulla irure voluptate reprehenderit elit. Incididunt anim cupidatat incididunt laboris dolore reprehenderit adipisicing cillum. Eu sint occaecat aliqua aute magna voluptate ut voluptate irure aute duis pariatur id.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="notification-date">05-05-20</p>
+                      <div class="notification-header">
+                        <h4>SE 302</h4>
+                        <p><span class="bold-span">Milestone:</span> Design Document</p>
+                        <p><span class="bold-span">Task:</span> UML Diagrams</p>
+                      </div>
+                      <hr class="content-separator">
+                      <div class="notification-content">
+                        <p class="content-text">Id sit aliqua consequat sunt qui cillum sit ea non magna ullamco. Tempor quis nulla non ut reprehenderit eiusmod proident. Incididunt aliqua reprehenderit laboris consectetur proident sint eu. Eiusmod magna consequat consectetur aliqua aute aliquip sint sit. Nisi tempor consectetur ipsum cillum tempor commodo dolore. Non ut voluptate nulla irure voluptate reprehenderit elit. Incididunt anim cupidatat incididunt laboris dolore reprehenderit adipisicing cillum. Eu sint occaecat aliqua aute magna voluptate ut voluptate irure aute duis pariatur id.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="notification-date">05-05-20</p>
+                      <div class="notification-header">
+                        <h4>SE 302</h4>
+                        <p><span class="bold-span">Milestone:</span> Design Document</p>
+                        <p><span class="bold-span">Task:</span> UML Diagrams</p>
+                      </div>
+                      <hr class="content-separator">
+                      <div class="notification-content">
+                        <p class="content-text">Id sit aliqua consequat sunt qui cillum sit ea non magna ullamco. Tempor quis nulla non ut reprehenderit eiusmod proident. Incididunt aliqua reprehenderit laboris consectetur proident sint eu. Eiusmod magna consequat consectetur aliqua aute aliquip sint sit. Nisi tempor consectetur ipsum cillum tempor commodo dolore. Non ut voluptate nulla irure voluptate reprehenderit elit. Incididunt anim cupidatat incididunt laboris dolore reprehenderit adipisicing cillum. Eu sint occaecat aliqua aute magna voluptate ut voluptate irure aute duis pariatur id.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="notification-date">05-05-20</p>
+                      <div class="notification-header">
+                        <h4>SE 302</h4>
+                        <p><span class="bold-span">Milestone:</span> Design Document</p>
+                        <p><span class="bold-span">Task:</span> UML Diagrams</p>
+                      </div>
+                      <hr class="content-separator">
+                      <div class="notification-content">
+                        <p class="content-text">Id sit aliqua consequat sunt qui cillum sit ea non magna ullamco. Tempor quis nulla non ut reprehenderit eiusmod proident. Incididunt aliqua reprehenderit laboris consectetur proident sint eu. Eiusmod magna consequat consectetur aliqua aute aliquip sint sit. Nisi tempor consectetur ipsum cillum tempor commodo dolore. Non ut voluptate nulla irure voluptate reprehenderit elit. Incididunt anim cupidatat incididunt laboris dolore reprehenderit adipisicing cillum. Eu sint occaecat aliqua aute magna voluptate ut voluptate irure aute duis pariatur id.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <p class="notification-date">05-05-20</p>
+                      <div class="notification-header">
+                        <h4>SE 302</h4>
+                        <p><span class="bold-span">Milestone:</span> Design Document</p>
+                        <p><span class="bold-span">Task:</span> UML Diagrams</p>
+                      </div>
+                      <hr class="content-separator">
+                      <div class="notification-content">
+                        <p class="content-text">Id sit aliqua consequat sunt qui cillum sit ea non magna ullamco. Tempor quis nulla non ut reprehenderit eiusmod proident. Incididunt aliqua reprehenderit laboris consectetur proident sint eu. Eiusmod magna consequat consectetur aliqua aute aliquip sint sit. Nisi tempor consectetur ipsum cillum tempor commodo dolore. Non ut voluptate nulla irure voluptate reprehenderit elit. Incididunt anim cupidatat incididunt laboris dolore reprehenderit adipisicing cillum. Eu sint occaecat aliqua aute magna voluptate ut voluptate irure aute duis pariatur id.</p>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-7 user-calendar">
+                <p>UTKU</p>
+                <calendar>
+                    <a href="https://www.timeanddate.com/calendar/"><p>calendar</p></a>
+                </calendar>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    $(document).ready(function($) {
+      $('.content-text').each(function(index, value) {
+        $(this).html($(this).html().substring(0,150));
+      })
+    });
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- {% block scriptcontent %}{% endblock %} -->
+  </body>
+</html>
