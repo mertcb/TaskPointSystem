@@ -7,7 +7,8 @@ body, div, p, td, li {
 /* SIDEBAR */
 
 #sidebar {
-  background-color: #636363;
+  /* background-color: #636363; */
+  background-color: #1A1A1A;
   height: 100%;
   width: 200px;
   left: 0;
@@ -37,7 +38,7 @@ body, div, p, td, li {
   width: 100%;
   height: 100%;
   /* border-bottom: 2px solid #636363; */
-  border-left: 8px solid #636363;
+  border-left: 8px solid #1A1A1A;
   transition: 0.3s;
 }
 
@@ -53,7 +54,7 @@ body, div, p, td, li {
   bottom: 0px;
   width: 100%;
   color: aliceblue;
-  border-left: 8px solid #636363;
+  border-left: 8px solid #1A1A1A;
   text-decoration: none;
   padding: 14px 0 14px 8px;
 }
@@ -68,7 +69,7 @@ body, div, p, td, li {
 .brand-link:hover {
   border-left: none !important; /* CHANGE THE BRAND TO A SEPERATE ITEM */
   text-decoration: none;
-  background-color: #636363 !important;
+  background-color: #1A1A1A !important;
 }
 
 #tps-logo {
@@ -116,24 +117,20 @@ body, div, p, td, li {
   padding-top: 5px;
 }
 
-/* PROFILE HTML */
+/* PROFILE PAGE */
 
 .profile-row {
-  background-color: rgba(1, 1, 1, 0.5);
   position: sticky;
   left: 200px;
   min-width: 350px;
+  height: 235px;
 }
 
 .profile-card {
   position: sticky;
   left: 200px;
   min-width: 350px;
-}
-
-.user-calendar {
-  background-color: rgb(116, 115, 114);
-  min-width: 350px;
+  margin-top: -5px;
 }
 
 .main-screen {
@@ -166,7 +163,6 @@ body, div, p, td, li {
 /* FEED */
 
 .user-feed {
-  background-color: rgb(201, 201, 201);
   position: sticky;
   left: 200px;
   min-width: 350px;
@@ -174,6 +170,7 @@ body, div, p, td, li {
 
 .user-feed ul {
   list-style: none;
+  margin-left: -37.5px;
 }
 
 .user-feed ul li {
@@ -182,7 +179,7 @@ body, div, p, td, li {
   font-size: 20px;
   padding-left: 10px;
   min-height: 50px;
-  box-shadow: 3px 2px gray;
+  box-shadow: 3px 2px #CFCFCF;
   border-radius: 5px;
   transition: 0.3s;
 }
@@ -210,9 +207,6 @@ body, div, p, td, li {
   border: 0.8px solid #A5A5A5;
 }
 
-.notification-content {
-}
-
 .content-text:after {
   content: "...";
 }
@@ -225,12 +219,37 @@ body, div, p, td, li {
 }
 
 
+/* CALENDAR */
+
+.user-calendar {
+  min-width: 350px;
+  position: sticky;
+  left: 667.98px;
+}
+
+.calendar-header {
+  text-align: center;
+}
+
+#calendar {
+  margin-top: 10px;
+  width: 911px;
+  height: 82%;
+}
+
+#previous, 
+#next {
+  position: sticky;
+  top: 300px;
+}
+
+.table-bordered thead tr th {
+  width: 130px;
+}
 
 
 
-
-
- /* MEDIA AND COMPATIBILITY */
+/* MEDIA AND COMPATIBILITY */
 
 @media only screen and (max-width: 1049px) {
   .col-sm-7 {
